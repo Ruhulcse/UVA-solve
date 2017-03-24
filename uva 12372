@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int i,T,L,W,H;
+    int n=1;
+    scanf("%d",&T);
+    for(i=0;i<T;i++)
+    {
+        scanf("%d%d%d",&L,&W,&H);
+        printf("case %d: ",n++);
+        if(L<=20&W<=20&H<=20)
+            printf("Good\n");
+        else
+            printf("bad\n");
+    }
+
+    return 0;
+}
