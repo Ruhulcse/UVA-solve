@@ -1,2 +1,0 @@
-# UVA-solve
-uva solve 
