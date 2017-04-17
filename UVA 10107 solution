@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    vector<int>store;
+    while(cin>>n){
+        store.push_back(n);
+        sort(store.begin(),store.end());
+        if(store.size()%2==0)
+        {
+            cout<<(store[store.size()/2]+store[store.size()/2-1])/2<<endl;
+        }
+        else
+        {
+           cout<<store[store.size()/2]<<endl;
+        }
+    }
+    return 0;
+}
