@@ -1,0 +1,14 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main ()
+{
+    int s[3], t, i;
+    cin >> t;
+    for (i = 1; i<=t; i++)
+    {
+        cin >> s[0] >> s[1] >> s[2];
+        sort (s, s+3);
+        cout << "Case " << i << ": " << s[1] << endl;
+    }
+}
