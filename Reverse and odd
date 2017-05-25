@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   long long int test,num,a,s,c;
+    while(scanf("%d",&test)==1)
+    {
+        while(test--)
+        {
+            cin>>num;
+            a=num;
+            c=0;
+            while(1)
+            {
+                s=0;
+                while(num!=0)
+                {
+                    s=s*10+num%10;
+                    num/=10;
+                }
+              if(s==a)
+                break;
+              else
+              {
+                 num=s+a;
+                  a=s+a;
+                  c++;
+              }
+            }
+            cout<<c<<" "<<a<<endl;
+        }
+    }
+    return 0;
+}
+
