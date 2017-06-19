@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int l,c;
+    string a,b;
+    while(cin>>a>>b)
+    {
+        l=a.size();
+         c=0;
+        for(int i=0;i<b.size();i++)
+        {
+            if(b[i]==a[c])
+                c++;
+        }
+        if(c==l)
+            cout<<"Yes"<<endl;
+        else
+            cout<<"No"<<endl;
+    }
+    return 0;
+}
