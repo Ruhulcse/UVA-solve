@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+    int test,days,party,avarage;
+    cin>>test;
+    while(test--)
+    {
+        set<int>hortal;
+        cin>>days;
+        cin>>party;
+        while(party--)
+        {
+            cin>>avarage;
+            for(int i=avarage;i<=days;i+=avarage)
+            {
+                if((i%7==0)||(i%7==6))
+                {
+
+                }
+                else
+                {
+                    hortal.insert(i);
+                }
+            }
+        }
+        cout<<hortal.size()<<endl;;
+        hortal.clear();
+    }
+    return 0;
+}
